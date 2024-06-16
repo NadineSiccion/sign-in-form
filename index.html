@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="aesthetic">
+        <div class="logo">
+            <img href="imgs/odin-lined.png" />
+            <span>Wordmark</span>
+        </div>
+    </div>
+    <div class="main">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorum hic vitae fugit aspernatur aut voluptate tempora reprehenderit, ipsa suscipit labore, nam vel nihil repellat quia quasi, commodi dolor. Eos!</h2>
+        <h2>some text some text</h2>
+        <div class="form-container">
+            <h2>Let's do this!</h2>
+            <form id="sign-in-form" action="/some-url" method="post">
+                <label for="firstname">First name</label>
+                <input type="text" name="firstname" id="firstname" />
+                <label for="lastname">Last name</label>
+                <input type="text" name="lastname" id="lastname" />
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" />
+                <label for="phone">Phone number</label>
+                <input type="tel" name="phone" id="phone" />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+                <label for="confirm-pw">Confirm Password</label>
+                <input type="password" id="confirm-pw" name="confirm-pw" />
+            </form>            
+        </div>
+        <button form="sign-in-form">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </div>
+</body>
+</html>
