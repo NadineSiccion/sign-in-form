@@ -8,14 +8,13 @@
 :root {
     --main: #596D48;
     --white: #ffffff;
-    --backup-color: #002a85;
+    --outline-focused: #1d54ca;
     --outline: #E5E7EB;
     --outline-invalid: #bb0000;
     --right-class-margin: 16px 32px;
 }
 
 html * {
-    /* border: 2px red solid; */
     box-sizing: border-box;
     font-family: 'system-ui', sans-serif;
 }
@@ -104,11 +103,16 @@ li {
     width: min(40%, 300px);
     margin-left: 0;
     margin-right: 16px;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
-li > label, li > input {
+li > label {
     margin: 0;
     padding: 0;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+
 }
 
 button {
@@ -120,10 +124,32 @@ button {
     color: var(--white);
     border-radius: 5px;
     padding: 8px 30px;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.1rem;
 }
 
 .right > p {
     margin: var(--right-class-margin);
+}
+
+/* DYNAMIC STYLING */
+input {
+    outline: none;
+    border: var(--outline) solid 2px;
+    border-radius: 5px;
+    height: 2rem;
+    padding: 4px;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+    border: var(--outline-focused) solid 2px;
+    box-shadow: 0px 0px 3px var(--outline-focused);
+}
+
+input:invalid {
+    outline: none;
+    border: var(--outline-invalid) solid 2px;
+    box-shadow: 0px 0px 3px var(--outline-invalid);
 }

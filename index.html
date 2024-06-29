@@ -3,49 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In Form</title>
+    <title>PHoodies - Sign In Form</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="left">
         <div class="logo">
           <img src="imgs/odin-lined.png"/>
-          <span>Wordmark</span>
+          <span>PHOODIES</span>
         </div>
     </div>
     <div class="right">
       <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorum hic vitae fugit aspernatur aut voluptate tempora reprehenderit,ipsa suscipit labore, nam vel nihil repellat quia quasi, commodi dolor.
-        Eos!
+        Hello! Welcome to the website about Philippine Cuisine. Here, we will learn plenty of cuisine stuff in Southeast Asia. It's really cool, I promise!
       </h2>
-      <h2>some text some text</h2>
+      <h2>Subscript to our news letter.</h2>
       <div class="form-container">
         <h2>Let's do this!</h2>
         <form id="sign-in-form" action="/some-url" method="post">
           <ul>
             <li>
-              <label for="firstname">First name</label>
+              <label for="firstname">FIRST NAME</label>
               <input type="text" name="firstname" id="firstname" />
             </li>
             <li>
-              <label for="lastname">Last name</label>
+              <label for="lastname">LAST NAME</label>
               <input type="text" name="lastname" id="lastname" />
             </li>
             <li>
-              <label for="email">Email</label>
+              <label for="email">EMAIL</label>
               <input type="email" name="email" id="email" />
             </li>
             <li>
-              <label for="phone">Phone number</label>
-              <input type="tel" name="phone" id="phone" />
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" name="phone" id="phone" pattern="^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"/>
             </li>
 
             <li>
-              <label for="password">Password</label>
+              <label for="password">PASSWORD</label>
               <input type="password" id="password" name="password" />
             </li>
             <li>
-              <label for="confirm-pw">Confirm Password</label>
+              <label for="confirm-pw">CONFIRM PASSWORD</label>
               <input type="password" id="confirm-pw" name="confirm-pw" />
             </li>
           </ul>
