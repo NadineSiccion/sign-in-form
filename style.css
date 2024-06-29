@@ -60,6 +60,19 @@ body {
     font-size: 4rem;
 }
 
+cite {
+    position: absolute;
+    bottom: 16px;
+    left: 8px;
+}
+
+cite, cite > a {
+    color: var(--white);
+    font-style: none;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 
 .right {
     margin: 0;
@@ -77,7 +90,7 @@ h2 {
 .form-container {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 5px 5px 3px #0000004b;
+    box-shadow: 0px 2px 5px 3px #0000004b;
     margin: 10px 0px;
     background-color: var(--white);
 }
