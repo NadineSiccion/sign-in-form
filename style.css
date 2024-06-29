@@ -12,6 +12,7 @@
     --outline: #E5E7EB;
     --outline-invalid: #bb0000;
     --right-class-margin: 16px 32px;
+    --main-dark: #4d5e3e;
 }
 
 html * {
@@ -34,6 +35,7 @@ body {
     width: 33vw;
     background-image: url("imgs/bg-food.jpg");
     background-size: cover;
+    min-width: min-content;
 }
 
 .logo {
@@ -42,12 +44,12 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 100px;
-    display: inline-block;
     display: flex;
-    align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.514);
+    flex-wrap: wrap;
+    align-items: center;
+    min-width: min-content;
 }
 
 .logo > img {
@@ -58,12 +60,18 @@ body {
     color: var(--white);
     font-family: "Norse Bold", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 4rem;
+    word-wrap: break-word;
+    text-wrap: wrap;
+    min-width: max-content;
 }
 
 cite {
     position: absolute;
+    display: block;
     bottom: 16px;
     left: 8px;
+    text-wrap: wrap;
+    word-break: break-all;
 }
 
 cite, cite > a {
@@ -73,7 +81,6 @@ cite, cite > a {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 .right {
     margin: 0;
     display: flex;
@@ -81,6 +88,8 @@ cite, cite > a {
     justify-content: center;
     background-color: #fafafa;
     width: 67vw;
+    max-height: 100vh;
+    z-index: 3;
 }
 
 h2 {
@@ -93,6 +102,7 @@ h2 {
     box-shadow: 0px 2px 5px 3px #0000004b;
     margin: 10px 0px;
     background-color: var(--white);
+    align-items: flex-start;
 }
 
 form {
@@ -113,7 +123,7 @@ li {
     display: flex;
     flex-flow: column nowrap;
     gap: 8px;
-    width: min(40%, 300px);
+    width: 40%;
     margin-left: 0;
     margin-right: 16px;
     margin-top: 0;
@@ -165,4 +175,19 @@ input:invalid {
     outline: none;
     border: var(--outline-invalid) solid 2px;
     box-shadow: 0px 0px 3px var(--outline-invalid);
+}
+
+p > a {
+    font-weight: 700;
+}
+
+p > a:link, p > a:visited {
+    font-style: none;
+    text-decoration: none;
+    color: var(--main);
+}
+
+p > a:hover, p > a:active {
+    text-decoration: underline;
+    color: var(--main-dark);
 }
